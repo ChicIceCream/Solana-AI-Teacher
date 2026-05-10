@@ -1,0 +1,38 @@
+{
+  "name": "solana-ai-teacher",
+  "version": "1.0.0",
+  "description": "Voice-controlled Solana teaching terminal — backend API server",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": ["solana", "ai", "teaching", "terminal", "gemini", "web3"],
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "winston": "^3.17.0",
+    "ws": "^8.18.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "supertest": "^7.1.0",
+    "vitest": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
